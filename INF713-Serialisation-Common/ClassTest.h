@@ -18,6 +18,6 @@ struct ClassTest
 
 	std::string ToString() const
 	{
-		return Reflecto::Utils::StringExt::Format<std::string>("{Field1=%u,Field2=%f,Field2=%s}", Field1, Field2, Field3.c_str());
+		return Reflecto::Utils::StringExt::Format<std::string>("{Field1=%u,Field2=%f,Field3=%s}", Field1, Field2, Field3.c_str());
 	}
 };

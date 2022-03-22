@@ -1,0 +1,1 @@
+Field1 42 Field2 3.14159 Field3 Bonjour!\Ceci\est\un\test\avec\une\longue\string! 

@@ -11,11 +11,6 @@
 #include "ClassTestStatic.h"
 #include "SerializationWorkbench.h"
 
-#include <iostream>
-#include <limits>
-#include <stdint.h>
-#include <type_traits>
-
 int main()
 {
 	std::locale::global(std::locale{ "" }); // Correction des accents
