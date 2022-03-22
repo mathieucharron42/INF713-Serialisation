@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "INF713-Serialisation", "INF713-Serialisation\INF713-Serialisation.vcxproj", "{1F478832-7A56-4B13-8934-048E9CAAEFAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F478832-7A56-4B13-8934-048E9CAAEFAB}.Debug|x64.ActiveCfg = Debug|x64
+		{1F478832-7A56-4B13-8934-048E9CAAEFAB}.Debug|x64.Build.0 = Debug|x64
+		{1F478832-7A56-4B13-8934-048E9CAAEFAB}.Debug|x86.ActiveCfg = Debug|Win32
+		{1F478832-7A56-4B13-8934-048E9CAAEFAB}.Debug|x86.Build.0 = Debug|Win32
+		{1F478832-7A56-4B13-8934-048E9CAAEFAB}.Release|x64.ActiveCfg = Release|x64
+		{1F478832-7A56-4B13-8934-048E9CAAEFAB}.Release|x64.Build.0 = Release|x64
+		{1F478832-7A56-4B13-8934-048E9CAAEFAB}.Release|x86.ActiveCfg = Release|Win32
+		{1F478832-7A56-4B13-8934-048E9CAAEFAB}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BAFDA73-8588-4499-B9A8-A3EA6BFD4745}
+	EndGlobalSection
+EndGlobal
