@@ -23,13 +23,7 @@
     <ClInclude Include="ManualMaisonSerialisationTechnique.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ClassTestManualSerialisationTechnique.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ManualJsonSerialisationTechnique.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassTestManualJsonSerializationTechnique.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,8 +1,8 @@
 // INF713-Serialisation-1-Manuelle.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include "ClassTestManualSerialisationTechnique.h"
-#include "ClassTestManualJsonSerializationTechnique.h"
+#include "ManualMaisonSerialisationTechnique.h"
+#include "ManualJsonSerialisationTechnique.h"
 
 #include "ClassTest.h"
 #include "SerializationWorkbench.h"

@@ -150,8 +150,6 @@
     <ClCompile Include="INF713-Serialisation-1-Manuelle.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ClassTestManualJsonSerializationTechnique.h" />
-    <ClInclude Include="ClassTestManualSerialisationTechnique.h" />
     <ClInclude Include="ManualJsonSerialisationTechnique.h" />
     <ClInclude Include="ManualMaisonSerialisationTechnique.h" />
   </ItemGroup>
