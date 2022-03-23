@@ -20,7 +20,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ManualSerialisationTechnique.h">
+    <ClInclude Include="ManualMaisonSerialisationTechnique.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ClassTestManualSerialisationTechnique.h">

@@ -1,0 +1,1 @@
+{"type":"TestClass","value":{"Field1":{"type":"uint32","value":42},"Field2":{"type":"float","value":3.1415901184082031},"Field3":{"type":"string","value":"Bonjour! Ceci est un test avec une longue string!"}}}

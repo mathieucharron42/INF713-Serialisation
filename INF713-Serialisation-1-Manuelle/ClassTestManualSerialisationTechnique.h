@@ -1,7 +1,7 @@
 #pragma once
 
 #include "ClassTest.h"
-#include "ManualSerialisationTechnique.h"
+#include "ManualMaisonSerialisationTechnique.h"
 
 #include "Common/Ensure.h"
 
@@ -10,23 +10,16 @@
 #include <sstream>
 #include <string>
 
-namespace ManualSerializationTechnique
+namespace ManualMaisonSerializationTechnique
 {
 	template<>
 	void Serialization(const ClassTest& instance, std::ostream& stream)
 	{
 		std::stringstream ss;
 		{
-			ss << "Field1" << kSeparator;
-			ss << instance.Field1 << kSeparator;
-
-			ss << "Field2" << kSeparator;
-			ss << instance.Field2 << kSeparator;
-
-			ss << "Field3" << kSeparator;
-			ss << Escape(instance.Field3) << kSeparator;
-
-			ss << std::endl;
+			Write("Field1", instance.Field1, ss);
+			Write("Field2", instance.Field2, ss);
+			Write("Field3", instance.Field3, ss);
 		}
 		stream << ss.str();
 	}
@@ -37,18 +30,10 @@ namespace ManualSerializationTechnique
 		std::string fieldName;
 
 		std::stringstream ss(std::string{ std::istreambuf_iterator<char>(stream), std::istreambuf_iterator<char>{} });
-
-		ss >> fieldName;
-		ensure(fieldName == "Field1");
-		ss >> instance.Field1;
-
-		ss >> fieldName;
-		ensure(fieldName == "Field2");
-		ss >> instance.Field2;
-
-		ss >> fieldName;
-		ensure(fieldName == "Field3");
-		ss >> instance.Field3;
-		instance.Field3 = Unescape(instance.Field3);
+		{
+			Read("Field1", instance.Field1, ss);
+			Read("Field2", instance.Field2, ss);
+			Read("Field3", instance.Field3, ss);
+		}
 	}
 }

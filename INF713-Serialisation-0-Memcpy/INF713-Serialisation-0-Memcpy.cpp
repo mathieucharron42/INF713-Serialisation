@@ -68,6 +68,7 @@ int main()
 	// Notez la vtable sérialisé ! Très problématique !!
 	ClassTestPolymorphic testPolymorphicClass;
 	testPolymorphicClass.Field1 = std::numeric_limits<uint32_t>::max();
+	testPolymorphicClass.Field2 = std::numeric_limits<uint32_t>::max();
 	SerializationWorkbench::Test(
 		"ClassTestPolymorphic", "Memcpy", "Binaire brute",
 		MemcpySerializationTechnique::Serialization<ClassTestPolymorphic>,

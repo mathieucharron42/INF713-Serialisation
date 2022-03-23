@@ -5,6 +5,8 @@
 #include <stdint.h>
 #include <string>
 
+using namespace Reflecto::Utils;
+
 #pragma pack(push, 1)
 struct ClassTest2FieldsPod
 {
@@ -18,7 +20,7 @@ struct ClassTest2FieldsPod
 
 	std::string ToString() const
 	{
-		return Reflecto::Utils::StringExt::Format<std::string>("{Field1=%u,Field2=%llu}", Field1, Field2);
+		return StringExt::Format<std::string>("{Field1=%u,Field2=%llu}", Field1, Field2);
 	}
 };
 static_assert(std::is_pod<ClassTest2FieldsPod>::value, "ClassTest2FieldsPod is not a pod");

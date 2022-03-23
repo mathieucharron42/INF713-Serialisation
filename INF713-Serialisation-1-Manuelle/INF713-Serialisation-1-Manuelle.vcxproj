@@ -153,7 +153,7 @@
     <ClInclude Include="ClassTestManualJsonSerializationTechnique.h" />
     <ClInclude Include="ClassTestManualSerialisationTechnique.h" />
     <ClInclude Include="ManualJsonSerialisationTechnique.h" />
-    <ClInclude Include="ManualSerialisationTechnique.h" />
+    <ClInclude Include="ManualMaisonSerialisationTechnique.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\INF713-Serialisation-Common\INF713-Serialisation-Common.vcxproj">

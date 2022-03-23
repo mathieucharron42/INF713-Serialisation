@@ -15,14 +15,14 @@ int main()
 
 	SerializationWorkbench::Test(
 		"ClassTest", "Manuelle", "Texte maison",
-		ManualSerializationTechnique::Serialization<ClassTest>,
-		ManualSerializationTechnique::Deserialization<ClassTest>,
+		ManualMaisonSerializationTechnique::Serialization<ClassTest>,
+		ManualMaisonSerializationTechnique::Deserialization<ClassTest>,
 		"manuelle_ClassTest.txt",
 		instance
 	);
 
 	SerializationWorkbench::Test(
-		"ClassTest", "Manuelle", "Texte maison",
+		"ClassTest", "Manuelle", "Json",
 		ManualJsonSerializationTechnique::Serialization<ClassTest>,
 		ManualJsonSerializationTechnique::Deserialization<ClassTest>,
 		"manuelle_ClassTest.json",
