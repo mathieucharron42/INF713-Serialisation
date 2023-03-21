@@ -6,8 +6,6 @@
 #include <stdint.h>
 #include <string>
 
-using namespace Reflecto::Utils;
-
 struct BaseTestClass
 {
 	uint32_t Field1;
@@ -19,7 +17,7 @@ struct BaseTestClass
 
 	virtual std::string ToString() const
 	{
-		return StringExt::Format<std::string>("{Field1=%u}", Field1);
+		return Reflecto::StringExt::Format<std::string>("{Field1=%u}", Field1);
 	}
 };
 
@@ -34,6 +32,6 @@ struct ClassTestPolymorphic : public BaseTestClass
 
 	virtual std::string ToString() const override
 	{
-		return StringExt::Format<std::string>("{Parent=%s,Field1=%u}", BaseTestClass::ToString().c_str(), Field1);
+		return Reflecto::StringExt::Format<std::string>("{Parent=%s,Field1=%u}", BaseTestClass::ToString().c_str(), Field1);
 	}
 };

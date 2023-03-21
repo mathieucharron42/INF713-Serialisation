@@ -6,8 +6,6 @@
 #include <string>
 #include <vector>
 
-using namespace Reflecto::Utils;
-
 struct ClassTestComponent
 {
 	int32_t ComponentField1;
@@ -20,7 +18,7 @@ struct ClassTestComponent
 
 	std::string ToString() const
 	{
-		return StringExt::Format<std::string>("{ComponentField1=%u,ComponentField2=%s}", ComponentField1, ComponentField2.c_str());
+		return Reflecto::StringExt::Format<std::string>("{ComponentField1=%u,ComponentField2=%s}", ComponentField1, ComponentField2.c_str());
 	}
 };
 
@@ -36,7 +34,7 @@ struct ClassTestComposition
 
 	std::string ToString() const
 	{
-		std::string componentsStr = StringExt::Join<std::string>(Components, ",", &ClassTestComponent::ToString);
-		return StringExt::Format<std::string>("{Field1=%s, Components=[%s]}", Field1.c_str(), componentsStr.c_str());
+		std::string componentsStr = Reflecto::StringExt::Join<std::string>(Components, ",", &ClassTestComponent::ToString);
+		return Reflecto::StringExt::Format<std::string>("{Field1=%s, Components=[%s]}", Field1.c_str(), componentsStr.c_str());
 	}
 };

@@ -5,8 +5,6 @@
 #include <stdint.h>
 #include <string>
 
-using namespace Reflecto::Utils;
-
 struct ClassTest
 {
 	uint32_t Field1 = 0;
@@ -20,6 +18,6 @@ struct ClassTest
 
 	std::string ToString() const
 	{
-		return StringExt::Format<std::string>("{Field1=%u,Field2=%f,Field3=%s}", Field1, Field2, Field3.c_str());
+		return Reflecto::StringExt::Format<std::string>("{Field1=%u,Field2=%f,Field3=%s}", Field1, Field2, Field3.c_str());
 	}
 };

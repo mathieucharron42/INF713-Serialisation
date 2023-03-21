@@ -10,8 +10,6 @@
 #include <sstream>
 #include <string>
 
-using namespace Reflecto::Utils;
-
 namespace ManualMaisonSerializationTechnique
 {
 	const std::string kSeparator = " ";
@@ -28,7 +26,7 @@ namespace ManualMaisonSerializationTechnique
 	void Write(const std::string& field, const std::string& value, std::stringstream& stream)
 	{
 		stream << field << kSeparator;
-		std::string escapedValue = StringExt::ReplaceAll(value, kSeparator, kEscapeSeparator);
+		std::string escapedValue = Reflecto::StringExt::ReplaceAll(value, kSeparator, kEscapeSeparator);
 		stream << escapedValue << kSeparator;
 	}
 
@@ -49,7 +47,7 @@ namespace ManualMaisonSerializationTechnique
 		ensure(readField == field);
 		std::string escapedValue;
 		stream >> escapedValue;
-		value = StringExt::ReplaceAll(escapedValue, kEscapeSeparator, kSeparator);
+		value = Reflecto::StringExt::ReplaceAll(escapedValue, kEscapeSeparator, kSeparator);
 	}
 
 	template<typename type>

@@ -17,6 +17,6 @@ struct ClassTestStatic
 
 	std::string ToString() const
 	{
-		return Reflecto::Utils::StringExt::Format<std::string>("{Field1=%s}", FieldArray);
+		return Reflecto::StringExt::Format<std::string>("{Field1=%s}", FieldArray);
 	}
 };
